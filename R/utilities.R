@@ -27,9 +27,9 @@ char_convert <- function(x){
 #Query function
 whoapi_query <- function(token, url, ...){
   url <- paste0("http://api.whoapi.com/?apikey=", token$key, url)
-  result <- GET(url, user_agent(token$user_agent), ...)
-  stop_for_status(result)
-  result <- content(result)
+  result <- httr::GET(url, user_agent(token$user_agent), ...)
+  httr::stop_for_status(result)
+  result <- httr::content(result)
   if(char_convert(result$status)){
     stop(result$status_desc)
   }

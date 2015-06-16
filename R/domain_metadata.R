@@ -46,6 +46,7 @@ domain_rank <- function(token, domain, ...){
 #'@examples
 #'token <- whoapi_token("demokey")
 #'search_results <- domain_search(token, "whoapi.com")
+#'
 #'@export
 domain_search <- function(token, domain, ...){
   url <- paste0("&r=searchengines&domain=", domain)
@@ -53,10 +54,50 @@ domain_search <- function(token, domain, ...){
   return(result)
 }
 
+#'@title Retrieve Domain Metadata
+#'@description \code{domain_metadata} retrieves
+#'information about the content on a domain,
+#'specifically the title and metadata description
+#'fields from its home page
+#'
+#'@param token a token generated with \code{\link{whoapi_token}}
+#'
+#'@param domain a domain name
+#'
+#'@param ... further arguments to pass to httr's GET.
+#'
+#'@examples
+#'token <- whoapi_token("demokey")
+#'metadata <- domain_metadata(token, "whoapi.com")
+#'
+#'@export
 domain_metadata <- function(token, domain, ...){
-
+  url <- paste0("&r=meta&domain=", domain)
+  result <- whoapi_query(token, url, ...)
+  return(result)
 }
 
+#'@title Retrive Domain Location Information
+#'@description \code{domain_location} returns geographic
+#'information about where a domain - or, specifically,
+#'its IP address - is located.
+#'
+#'@param token a token generated with \code{\link{whoapi_token}}
+#'
+#'@param domain a domain name
+#'
+#'@param ... further arguments to pass to httr's GET.
+#'
+#'@seealso \code{\link{whois}} for more free-form information,
+#'including (potentially) the address of the domain holders.
+#'
+#'@examples
+#'token <- whoapi_token("demokey")
+#'location_data <- domain_location(token, "whoapi.com")
+#'
+#'@export
 domain_location <- function(token, domain, ...){
-
+  url <- paste0("&r=geo&domain=", domain)
+  result <- whoapi_query(token, url, ...)
+  return(result)
 }
