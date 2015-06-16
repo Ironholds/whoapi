@@ -7,8 +7,8 @@ __Status:__ In development
 
 ###Description
 
-[whoapi.com](https://whoapi.com) is a repository of information about domains, including registration date,
-WHOIS data, page rank and similar metadata. <code>whoapi</code> provides a simple and uniform binding to their
-API, allowing for automatic data retrieval in R.
+<code>whoapi</code> is an R API client for [whoapi.com](https://whoapi.com), a repository of information about
+internet domains including registration and WHOIS data, page rank and content metadata. It is currently in very,
+very early development. 
 
-It is currently in very, very early development. Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
