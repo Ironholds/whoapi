@@ -28,7 +28,7 @@ is_taken(token, "whoapi.com")
 #[1] TRUE
 }
 \seealso{
-\code{\link{whois}} for more information about a domain's status,
+\code{\link{whois_info}} for more information about a domain's status,
 including when the registration expires and who has registered it.
 }
 

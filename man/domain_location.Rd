@@ -23,7 +23,7 @@ token <- whoapi_token("demokey")
 location_data <- domain_location(token, "whoapi.com")
 }
 \seealso{
-\code{\link{whois}} for more free-form information,
+\code{\link{whois_info}} for more free-form information,
 including (potentially) the address of the domain holders.
 }
 

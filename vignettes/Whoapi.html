@@ -33,15 +33,17 @@
 
 
 <p><code>whoapi</code> provides functionality to query the <a href="https://whoapi.com/">Whoapi domain information database</a>. You can use this to get registration and whois data about a domain, geolocate its underlying IP address, check its popularity, and a variety of other things.</p>
-<div id="creating-a-token" class="section level2">
-<h2>Creating a token</h2>
+<div id="using-whoapi" class="section level2">
+<h2>Using whoapi</h2>
 <p>The first thing you need to use this service is a token; something that contains your API key and whatever options you’d like to set, such as the user agent. To obtain an API key, see the <a href="https://whoapi.com/signin.html">whoapi website</a>; then pass that key and the other options to <code>whoapi_token</code>.</p>
-</div>
-<div id="querying-for-domain-data" class="section level2">
-<h2>Querying for domain data</h2>
-</div>
-<div id="querying-for-domain-metadata" class="section level2">
-<h2>Querying for domain metadata</h2>
+<p>Once you’ve created a token, do what thou wilst! The package provides access to a variety of direct data, including:</p>
+<ul>
+<li>Whether the domain is registered, with <code>is_taken</code>;</li>
+<li>Whether the domain is blacklisted, with <code>is_blacklisted</code>;</li>
+<li>WHOIS information with <code>whois_info</code>;</li>
+<li>SSL certificate information with <code>certificate_info</code>.</li>
+</ul>
+<p>Additionally, metadata is made available. <code>domain_rank</code> and <code>domain_search</code> can be used, for example, to identify how popular a site is according to common ranking algorithms and how many entries relating to it appear in search results. <code>domain_location</code> provides geographic data about the domain’s location - or, at least, the location the it resolves to.</p>
 </div>
 
 

@@ -9,14 +9,18 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-`whoapi` provides functionality to query the [Whoapi domain information database](https://whoapi.com/). You can use this to get registration and whois data
-about a domain, geolocate its underlying IP address, check its popularity, and a variety of other things.
+`whoapi` provides functionality to query the [Whoapi domain information database](https://whoapi.com/). You can use this to get registration and whois data about a domain, geolocate its underlying IP address, check its popularity, and a variety of other things.
 
-## Creating a token
+## Using whoapi
 
 The first thing you need to use this service is a token; something that contains your API key and whatever options you'd like to set,
 such as the user agent. To obtain an API key, see the [whoapi website](https://whoapi.com/signin.html); then pass that key and the other options to  `whoapi_token`. 
 
-## Querying for domain data
+Once you've created a token, do what thou wilst! The package provides access to a variety of direct data, including:
 
-## Querying for domain metadata
+* Whether the domain is registered, with `is_taken`;
+* Whether the domain is blacklisted, with `is_blacklisted`;
+* WHOIS information with `whois_info`;
+* SSL certificate information with `certificate_info`.
+
+Additionally, metadata is made available. `domain_rank` and `domain_search` can be used, for example, to identify how popular a site is according to common ranking algorithms and how many entries relating to it appear in search results. `domain_location` provides geographic data about the domain's location - or, at least, the location the it resolves to.

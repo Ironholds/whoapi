@@ -11,7 +11,7 @@
 #'@return a boolean TRUE or FALSE indicating, respectively, whether the domain
 #'is reserved/registered, or not.
 #'
-#'@seealso \code{\link{whois}} for more information about a domain's status,
+#'@seealso \code{\link{whois_info}} for more information about a domain's status,
 #'including when the registration expires and who has registered it.
 #'
 #'@examples

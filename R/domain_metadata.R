@@ -88,7 +88,7 @@ domain_metadata <- function(token, domain, ...){
 #'
 #'@param ... further arguments to pass to httr's GET.
 #'
-#'@seealso \code{\link{whois}} for more free-form information,
+#'@seealso \code{\link{whois_info}} for more free-form information,
 #'including (potentially) the address of the domain holders.
 #'
 #'@examples
