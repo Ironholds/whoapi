@@ -1,11 +1,11 @@
-##whoapi
+## whoapi
 Bindings to the whoapi.com domain information API.
 
 __Author:__ Oliver Keyes <br/>
 __License:__ [MIT](http://opensource.org/licenses/MIT)<br/>
 __Status:__ In development
 
-###Description
+### Description
 
 <code>whoapi</code> is an R API client for [whoapi.com](https://whoapi.com), a repository of information about
 internet domains including registration and WHOIS data, page rank and content metadata. Functionality includes:
@@ -16,3 +16,9 @@ internet domains including registration and WHOIS data, page rank and content me
 4. Checking it against common domain blacklists.
 
 Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
+
+### Installation
+
+`whoapi` is not currently on CRAN, but can be downloaded from GitHub with:
+
+    devtools::install_github("ironholds/whoapi", ref = "0.1.0")
