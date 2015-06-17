@@ -1,0 +1,22 @@
+---
+title: "Whoapi Functionality"
+author: "Oliver Keyes"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Whoapi Functionality}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+`whoapi` provides functionality to query the [Whoapi domain information database](https://whoapi.com/). You can use this to get registration and whois data
+about a domain, geolocate its underlying IP address, check its popularity, and a variety of other things.
+
+## Creating a token
+
+The first thing you need to use this service is a token; something that contains your API key and whatever options you'd like to set,
+such as the user agent. To obtain an API key, see the [whoapi website](https://whoapi.com/signin.html); then pass that key and the other options to  `whoapi_token`. 
+
+## Querying for domain data
+
+## Querying for domain metadata
