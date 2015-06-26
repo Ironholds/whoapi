@@ -19,6 +19,10 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 ### Installation
 
-`whoapi` is not currently on CRAN, but can be downloaded from GitHub with:
+To get the released version:
+
+    install.packages("whoapi")
+
+To get the development version:
 
     devtools::install_github("ironholds/whoapi", ref = "0.1.0")
