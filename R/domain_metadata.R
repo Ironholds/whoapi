@@ -18,8 +18,9 @@
 #'
 #'@examples
 #'token <- whoapi_token("demokey")
+#'\dontrun{
 #'whoapi_domain <- domain_rank(token, "whoapi.com")
-#'
+#'}
 #'@export
 domain_rank <- function(token, domain, ...){
   url <- paste0("&r=ranks&domain=", domain)
@@ -45,8 +46,9 @@ domain_rank <- function(token, domain, ...){
 #'
 #'@examples
 #'token <- whoapi_token("demokey")
+#'\dontrun{
 #'search_results <- domain_search(token, "whoapi.com")
-#'
+#'}
 #'@export
 domain_search <- function(token, domain, ...){
   url <- paste0("&r=searchengines&domain=", domain)
@@ -68,8 +70,9 @@ domain_search <- function(token, domain, ...){
 #'
 #'@examples
 #'token <- whoapi_token("demokey")
+#'\dontrun{
 #'metadata <- domain_metadata(token, "whoapi.com")
-#'
+#'}
 #'@export
 domain_metadata <- function(token, domain, ...){
   url <- paste0("&r=meta&domain=", domain)
@@ -93,8 +96,9 @@ domain_metadata <- function(token, domain, ...){
 #'
 #'@examples
 #'token <- whoapi_token("demokey")
+#'\dontrun{
 #'location_data <- domain_location(token, "whoapi.com")
-#'
+#'}
 #'@export
 domain_location <- function(token, domain, ...){
   url <- paste0("&r=geo&domain=", domain)

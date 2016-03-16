@@ -17,7 +17,9 @@
 #'@examples
 #'#Check if whoapi.com is taken
 #'token <- whoapi_token("demokey")
+#'\dontrun{
 #'is_taken(token, "whoapi.com")
+#'}
 #'#[1] TRUE
 #'
 #'@export
@@ -71,8 +73,9 @@ is_blacklisted <- function(token, domain, ...){
 #'
 #'@examples
 #'token <- whoapi_token("demokey")
+#'\dontrun{
 #'whoapi_whois_info <- whois_info(token, "whoapi.com")
-#'
+#'}
 #'@export
 whois_info <- function(token, domain, ...){
   url <- paste0("&r=whois&domain=", domain)
@@ -95,8 +98,9 @@ whois_info <- function(token, domain, ...){
 #'
 #'@examples
 #'token <- whoapi_token("demokey")
+#'\dontrun{
 #'whoapi_cert <- certificate_info(token, "whoapi.com")
-#'
+#'}
 #'@export
 certificate_info <- function(token, domain, ...){
   url <- paste0("&r=cert&domain=", domain)
